@@ -1,0 +1,39 @@
+import json
+From haralyzer import HarPage
+
+with open('har_data.har', 'r') as f:
+    har_page = HarPage('page_3', har_data=json.loads(f.read()))
+
+### GET BASIC INFO
+har_page.hostname
+# 'humanssuck.net'
+har_page.url
+$ 'http://humanssuck.net/about/'
+
+### WORK WITH LOAD TIMES (all load times are in ms) ###
+
+# Get image load time in milliseconds as rendered by the browser
+har_page.image_load_time
+# prints 713
+
+# We could do this with 'css', 'js', 'html', 'audio', or 'video'
+
+### WORK WITH SIZES (all sizes are in bytes) ###
+
+# Get the total page size (with all assets)
+har_page.page_size
+# prints 2423765
+
+# Get the total image size
+har_page.image_size
+# prints 733488
+# We could do this with 'css', 'js', 'html', 'audio', or 'video'
+
+# Get the transferred sizes (works only with HAR files, generated with Chrome)
+har_page.page_size_trans
+har_page.image_size_trans
+har_page.css_size_trans
+har_page.text_size_trans
+har_page.js_size_trans
+har_page.audio_size_trans
+har_page.video_size_trans
