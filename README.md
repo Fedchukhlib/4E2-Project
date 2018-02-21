@@ -1,6 +1,7 @@
 Instructions for installation of Ssllabs, mozilla-observatory and privacyscore
 
-Ssllabs:
+                                                                 
+                                                      Ssllabs:
 
 Before installing ssllabs, Go >= 1.3v. should be installed. 
 
@@ -20,7 +21,7 @@ On the next run of the same tester, there result output is almost instant.
 
 A command for ssllabs-scan --json-flat --hostfile (that would allow to test multiple test sites from a file where they are separated by a line)
 
-Mozilla observatory:
+                                                   Mozilla observatory:
 
 Before installing mozzila-obs, npm or node.js that has npm in it has to be installed by following: https://www.npmjs.com/get-npm
 
@@ -36,7 +37,7 @@ When that command went through, observatory jell.ie --zero --format=report comma
 
 A command observatory some.site.name --rescan is used to force a rescan. This could be used as fetching results from cache. 
 
-Privacyscore:
+                                                   Privacyscore:
 
 Privacyscore also uses go, so the same procedure is follwoed. The only difference is just creating a new directory for privacyscore in C://users/"..."/go/
 
