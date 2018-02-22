@@ -1,6 +1,7 @@
 Instructions for installation of Ssllabs, mozilla-observatory and privacyscore
 
-                                                                 
+<h3>Windows:</h3>
+
                                                       Ssllabs:
 
 Before installing ssllabs, Go >= 1.3v. should be installed. 
@@ -46,6 +47,7 @@ Then we clone the repo https://github.com/asciimoo/privacyscore and then use the
 When build succeeds, privacyscore.exe appears in the directory.
 
 To run it in cmd, a command privacyscore.exe some.site.name is usedto run the scan. 
+<h3>VM:</h3>
 
 That scan only provides a score for the test site, thus a command created by my project supervisor is used.
 
